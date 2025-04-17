@@ -10,10 +10,13 @@
 
 package com.example.project;
 
-public class Calculator {
-
-	public int add(int a, int b) {
-		return a + b;
+public class RomanNums{
+	public static String arabicNumConverter(int number) {
+		if (number == 1) {
+			return "";
+		
 	}
+	return "";
+}
 
 }

@@ -14,6 +14,7 @@ package com.example.project;
 	
 public class RomanNums {
     public String toRoman(int number) {
+        if (number == 1) return "I";
         return "";
     }
 }

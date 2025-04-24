@@ -25,29 +25,24 @@ import static org.junit.jupiter.api.Assertions.*;
 class RomanNumsTests {
 
 	@Test
-	void OnetoI() {
-		RomanNums converter = new RomanNums();
-		String result = converter.ArabtoRoman(1);
-		assertEquals("I", result);
-	}
-	@Test 
-	void TwotoII() {
-		RomanNums converter = new RomanNums();
-		String result = converter.ArabtoRoman(2);
-		assertEquals("II", result);
-	}
-	@Test 
-	void FourtoIV() {
-		RomanNums converter = new RomanNums();
-		String result = converter.ArabtoRoman(4);
-		assertEquals("IV", result);
-	}
-	//@Test
-	//void FivetoV() {
-	//	RomanNums converter = new RomanNums();
-	//	String result = converter.ArabtoRoman(5);
-	//	assertEquals("V", result);
-	//}
-		
+    void testOneToI() {
+        assertEquals("I", RomanNums.ArabtoRoman(1));
+    }
+
+    @Test
+    void testTwoToII() {
+        assertEquals("II", RomanNums.ArabtoRoman(2));
+    }
+
+    @Test
+    void testFourToIV() {
+        assertEquals("IV", RomanNums.ArabtoRoman(4));
+    }
+
+    @Test
+    void testFiveToV() {
+        assertEquals("V", RomanNums.ArabtoRoman(5));
+    }
 }
+		
 

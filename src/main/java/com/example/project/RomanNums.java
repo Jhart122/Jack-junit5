@@ -10,13 +10,10 @@
 
 package com.example.project;
 
-public class RomanNums{
-	public static String arabicNumConverter(int number) {
-		if (number == 1) {
-			return "I";
-		
-	}
-	return "";
-}
 
+	
+public class RomanNums {
+    public String toRoman(int number) {
+        return "";
+    }
 }

@@ -17,11 +17,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 class RomanNumsTests {
 
 	@Test
-	public void one(){
-		assertEquals("I", RomanNums.arabicNumConverter(1), "1");
+	void OnetoI() {
+		RomanNums converter = new RomanNums();
+		String result = converter.toRoman(1);
+		assertEquals("I", result);
 	}
-	
+		
 }
+

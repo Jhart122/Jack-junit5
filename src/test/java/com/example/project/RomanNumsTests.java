@@ -43,6 +43,11 @@ class RomanNumsTests {
     void testFiveToV() {
         assertEquals("V", RomanNums.ArabtoRoman(5));
     }
+
+	@Test 
+	void testSixToVI() {
+		assertEquals("VI", RomanNums.ArabtoRoman(6));
+	}
 }
 		
 

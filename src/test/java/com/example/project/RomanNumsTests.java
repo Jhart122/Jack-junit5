@@ -12,6 +12,8 @@ package com.example.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -27,6 +29,12 @@ class RomanNumsTests {
 		RomanNums converter = new RomanNums();
 		String result = converter.toRoman(1);
 		assertEquals("I", result);
+	}
+	@Test 
+	void TwotoII() {
+		RomanNums converter = new RomanNums();
+		String result = converter.toRoman(2);
+		assertEquals("II", result);
 	}
 		
 }

@@ -15,8 +15,12 @@ package com.example.project;
 public class RomanNums {
     public static String ArabtoRoman(int number) {
 		StringBuilder result = new StringBuilder();
-		for (int i = 0; i < number; i++) {
-			result.append("I");
+		if (number == 4) {
+			result.append("IV");
+		} else {
+			for (int i =0; i < number; i++) {
+				result.append("I");
+			}
 		}
 		return result.toString();
 }

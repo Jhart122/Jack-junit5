@@ -36,6 +36,12 @@ class RomanNumsTests {
 		String result = converter.ArabtoRoman(2);
 		assertEquals("II", result);
 	}
+	@Test 
+	void FourtoIV() {
+		RomanNums converter = new RomanNums();
+		String result = converter.ArabtoRoman(4);
+		assertEquals("IV", result);
+	}
 		
 }
 

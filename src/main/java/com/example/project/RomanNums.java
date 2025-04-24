@@ -10,21 +10,23 @@
 
 package com.example.project;
 
-
 	
 public class RomanNums {
     public static String ArabtoRoman(int number) {
 		StringBuilder result = new StringBuilder();
-		if (number == 5) {
+		int remaining = number;
+
+		if (remaining >= 5){
 			result.append("V");
-		} else if (number == 4) {
-			result.append("IV");
-		} else {
-			for (int i =0; i < number; i++) {
-				result.append("I");
-			}
+			remaining -= 5;
 		}
-			
+		if (remaining == 4) {
+			result.append("IV");
+			remaining -= 4;
+		}
+		for (int i =0; i < remaining; i++) {
+				result.append("I");
+			}	
 		return result.toString();
 }
 }

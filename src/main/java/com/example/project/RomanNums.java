@@ -13,9 +13,11 @@ package com.example.project;
 
 	
 public class RomanNums {
-    public String toRoman(int number) {
-        if (number == 1) return "I";
-		if (number == 2) return "II";
-        return "";
-    }
+    public static String ArabtoRoman(int number) {
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < number; i++) {
+			result.append("I");
+		}
+		return result.toString();
+}
 }

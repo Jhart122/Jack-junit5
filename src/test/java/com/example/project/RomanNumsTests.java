@@ -27,13 +27,13 @@ class RomanNumsTests {
 	@Test
 	void OnetoI() {
 		RomanNums converter = new RomanNums();
-		String result = converter.toRoman(1);
+		String result = converter.ArabtoRoman(1);
 		assertEquals("I", result);
 	}
 	@Test 
 	void TwotoII() {
 		RomanNums converter = new RomanNums();
-		String result = converter.toRoman(2);
+		String result = converter.ArabtoRoman(2);
 		assertEquals("II", result);
 	}
 		
